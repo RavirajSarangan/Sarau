@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Online Education</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		:root{ --brand:#635BFF; --accent:#22C55E; --muted:#6B7280; --bg:#0B0B0F; --card:#121318; }
+		html,body{ height:100%; }
+		body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; background: var(--bg); color: white; }
+		.container{ max-width: 1200px; }
+	</style>
+</head>
+<body>
+	<header class="sticky top-0 z-50 backdrop-blur bg-black/40">
+		<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+			<a href="#" class="flex items-center gap-2">
+				<div class="h-8 w-8 rounded bg-[var(--brand)]"></div>
+				<span class="text-lg font-bold">EduPro</span>
+			</a>
+			<nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+				<a class="hover:text-white" href="#features">Features</a>
+				<a class="hover:text-white" href="#courses">Courses</a>
+				<a class="hover:text-white" href="#instructors">Instructors</a>
+				<a class="hover:text-white" href="#pricing">Pricing</a>
+			</nav>
+			<div class="flex items-center gap-3">
+				<a href="#" class="hidden md:inline-block px-4 py-2 rounded-lg text-sm text-white/90 hover:text-white">Sign in</a>
+				<a href="#cta" class="inline-block px-4 py-2 rounded-lg text-sm font-semibold bg-[var(--brand)] hover:opacity-90">Get Started</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="relative overflow-hidden">
+			<div class="absolute inset-0 -z-10">
+				<div class="absolute -top-48 -left-40 h-96 w-96 rounded-full bg-[var(--brand)]/20 blur-3xl"></div>
+				<div class="absolute top-40 -right-40 h-96 w-96 rounded-full bg-[var(--accent)]/20 blur-3xl"></div>
+			</div>
+			<div class="container mx-auto px-6 pt-24 pb-16 grid md:grid-cols-2 items-center gap-12">
+				<div>
+					<p class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-[var(--accent)] bg-white/5 border border-white/10 rounded-full px-3 py-1">New
+						<span class="h-1 w-1 rounded-full bg-[var(--accent)]"></span> 500+ Courses</p>
+					<h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">Learn without limits with modern online education</h1>
+					<p class="mt-4 text-base md:text-lg text-gray-300">Master in‑demand skills with expert‑led courses, hands‑on projects, and a vibrant learning community.</p>
+					<div class="mt-8 flex flex-col sm:flex-row gap-3">
+						<a href="#courses" class="px-6 py-3 rounded-xl font-semibold bg-[var(--brand)] hover:opacity-90">Browse Courses</a>
+						<a href="#demo" class="px-6 py-3 rounded-xl font-semibold border border-white/15 hover:bg-white/5">Watch Demo</a>
+					</div>
+					<div class="mt-10 grid grid-cols-3 gap-6 text-left">
+						<div>
+							<div class="text-2xl font-bold">120k+</div>
+							<div class="text-sm text-gray-400">Students</div>
+						</div>
+						<div>
+							<div class="text-2xl font-bold">950+</div>
+							<div class="text-sm text-gray-400">Courses</div>
+						</div>
+						<div>
+							<div class="text-2xl font-bold">4.9/5</div>
+							<div class="text-sm text-gray-400">Average rating</div>
+						</div>
+					</div>
+				</div>
+				<div class="relative">
+					<div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-white/10 to-white/0 blur"></div>
+					<div class="relative rounded-3xl border border-white/10 bg-[var(--card)] p-4 shadow-2xl">
+						<img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop" alt="Students" class="rounded-2xl object-cover aspect-[4/3] w-full" />
+						<div class="mt-4 grid grid-cols-3 gap-3 text-center">
+							<div class="rounded-xl bg-white/5 p-3">
+								<div class="text-sm text-gray-300">Live Classes</div>
+								<div class="mt-1 text-lg font-semibold">Daily</div>
+							</div>
+							<div class="rounded-xl bg-white/5 p-3">
+								<div class="text-sm text-gray-300">Projects</div>
+								<div class="mt-1 text-lg font-semibold">40+</div>
+							</div>
+							<div class="rounded-xl bg-white/5 p-3">
+								<div class="text-sm text-gray-300">Certs</div>
+								<div class="mt-1 text-lg font-semibold">Yes</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features" class="container mx-auto px-6 py-20">
+			<div class="text-center max-w-2xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold">Everything you need to succeed</h2>
+				<p class="mt-3 text-gray-300">From beginner to pro, our platform supports your journey with the right tools and guidance.</p>
+			</div>
+			<div class="mt-12 grid md:grid-cols-3 gap-6">
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-6">
+					<div class="h-10 w-10 rounded-lg bg-[var(--brand)]/20 border border-[var(--brand)]/30"></div>
+					<h3 class="mt-4 text-lg font-semibold">Expert Mentors</h3>
+					<p class="mt-2 text-gray-400">Learn from industry leaders with years of real‑world experience.</p>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-6">
+					<div class="h-10 w-10 rounded-lg bg-[var(--brand)]/20 border border-[var(--brand)]/30"></div>
+					<h3 class="mt-4 text-lg font-semibold">Hands‑on Projects</h3>
+					<p class="mt-2 text-gray-400">Build a strong portfolio with practical, job‑ready projects.</p>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-6">
+					<div class="h-10 w-10 rounded-lg bg-[var(--brand)]/20 border border-[var(--brand)]/30"></div>
+					<h3 class="mt-4 text-lg font-semibold">Career Support</h3>
+					<p class="mt-2 text-gray-400">Receive resume reviews, mock interviews, and job referrals.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="courses" class="bg-white/5 border-y border-white/10">
+			<div class="container mx-auto px-6 py-20">
+				<div class="flex items-end justify-between gap-6">
+					<div>
+						<h2 class="text-3xl md:text-4xl font-bold">Popular Courses</h2>
+						<p class="mt-3 text-gray-300">Curated learning paths to accelerate your growth.</p>
+					</div>
+					<a href="#" class="px-4 py-2 rounded-lg border border-white/15 hover:bg-white/5">View all</a>
+				</div>
+				<div class="mt-10 grid md:grid-cols-3 gap-6">
+					<article class="rounded-2xl overflow-hidden border border-white/10 bg-[var(--card)]">
+						<img class="aspect-video w-full object-cover" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop" alt="Course 1">
+						<div class="p-5">
+							<h3 class="font-semibold">Full‑Stack Web Development</h3>
+							<p class="mt-1 text-sm text-gray-400">HTML, CSS, JS, React, Node</p>
+							<div class="mt-4 flex items-center justify-between text-sm">
+								<span class="text-gray-300">48 lessons</span>
+								<a href="#" class="text-[var(--brand)] hover:underline">Explore</a>
+							</div>
+						</div>
+					</article>
+					<article class="rounded-2xl overflow-hidden border border-white/10 bg-[var(--card)]">
+						<img class="aspect-video w-full object-cover" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Course 2">
+						<div class="p-5">
+							<h3 class="font-semibold">UI/UX Design Foundations</h3>
+							<p class="mt-1 text-sm text-gray-400">Figma, Prototyping, Usability</p>
+							<div class="mt-4 flex items-center justify-between text-sm">
+								<span class="text-gray-300">36 lessons</span>
+								<a href="#" class="text-[var(--brand)] hover:underline">Explore</a>
+							</div>
+						</div>
+					</article>
+					<article class="rounded-2xl overflow-hidden border border-white/10 bg-[var(--card)]">
+						<img class="aspect-video w-full object-cover" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop" alt="Course 3">
+						<div class="p-5">
+							<h3 class="font-semibold">Data Science & AI</h3>
+							<p class="mt-1 text-sm text-gray-400">Python, Pandas, ML</p>
+							<div class="mt-4 flex items-center justify-between text-sm">
+								<span class="text-gray-300">42 lessons</span>
+								<a href="#" class="text-[var(--brand)] hover:underline">Explore</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="instructors" class="container mx-auto px-6 py-20">
+			<div class="text-center max-w-2xl mx-auto">
+				<h2 class="text-3xl md:text-4xl font-bold">Learn from top instructors</h2>
+				<p class="mt-3 text-gray-300">Our instructors are vetted experts with proven track records.</p>
+			</div>
+			<div class="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 text-center">
+					<img class="mx-auto h-24 w-24 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop" alt="Instructor 1">
+					<h3 class="mt-4 font-semibold">Jane Cooper</h3>
+					<p class="text-sm text-gray-400">UX Designer</p>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 text-center">
+					<img class="mx-auto h-24 w-24 rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Instructor 2">
+					<h3 class="mt-4 font-semibold">Esther Howard</h3>
+					<p class="text-sm text-gray-400">Frontend Engineer</p>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 text-center">
+					<img class="mx-auto h-24 w-24 rounded-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop" alt="Instructor 3">
+					<h3 class="mt-4 font-semibold">Robert Fox</h3>
+					<p class="text-sm text-gray-400">Data Scientist</p>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 text-center">
+					<img class="mx-auto h-24 w-24 rounded-full object-cover" src="https://images.unsplash.com/photo-1552053831-71594a27632d?q=80&w=400&auto=format&fit=crop" alt="Instructor 4">
+					<h3 class="mt-4 font-semibold">Cody Fisher</h3>
+					<p class="text-sm text-gray-400">Full‑Stack Dev</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="container mx-auto px-6 py-20">
+			<div class="grid md:grid-cols-3 gap-6 items-stretch">
+				<div class="md:col-span-2">
+					<h2 class="text-3xl md:text-4xl font-bold">Simple pricing</h2>
+					<p class="mt-3 text-gray-300">Choose a plan that fits your goals and budget.</p>
+					<ul class="mt-6 grid sm:grid-cols-2 gap-4 text-sm text-gray-300">
+						<li class="flex items-center gap-2"><span class="h-5 w-5 rounded bg-[var(--accent)]/30 border border-[var(--accent)]/40"></span> Unlimited courses</li>
+						<li class="flex items-center gap-2"><span class="h-5 w-5 rounded bg-[var(--accent)]/30 border border-[var(--accent)]/40"></span> Certificates</li>
+						<li class="flex items-center gap-2"><span class="h-5 w-5 rounded bg-[var(--accent)]/30 border border-[var(--accent)]/40"></span> Career services</li>
+						<li class="flex items-center gap-2"><span class="h-5 w-5 rounded bg-[var(--accent)]/30 border border-[var(--accent)]/40"></span> Community access</li>
+					</ul>
+				</div>
+				<div class="rounded-2xl border border-white/10 bg-[var(--card)] p-6 self-end">
+					<div class="text-sm text-gray-400">Monthly</div>
+					<div class="mt-1 text-4xl font-extrabold">$19<span class="text-lg text-gray-400">/mo</span></div>
+					<a id="cta" href="#" class="mt-6 inline-block w-full text-center px-6 py-3 rounded-xl font-semibold bg-[var(--brand)] hover:opacity-90">Start learning</a>
+					<div class="mt-3 text-xs text-gray-400">Cancel anytime. 7‑day money‑back guarantee.</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="border-t border-white/10">
+		<div class="container mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+			<div>
+				<div class="flex items-center gap-2">
+					<div class="h-8 w-8 rounded bg-[var(--brand)]"></div>
+					<span class="text-lg font-bold">EduPro</span>
+				</div>
+				<p class="mt-3 text-sm text-gray-400">Empowering learners worldwide.</p>
+			</div>
+			<nav class="grid grid-cols-2 md:grid-cols-3 gap-6 md:col-span-3 text-sm">
+				<div>
+					<h4 class="font-semibold mb-3">Product</h4>
+					<ul class="space-y-2 text-gray-400">
+						<li><a href="#features" class="hover:text-white">Features</a></li>
+						<li><a href="#courses" class="hover:text-white">Courses</a></li>
+						<li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="font-semibold mb-3">Company</h4>
+					<ul class="space-y-2 text-gray-400">
+						<li><a href="#" class="hover:text-white">About</a></li>
+						<li><a href="#" class="hover:text-white">Careers</a></li>
+						<li><a href="#" class="hover:text-white">Blog</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4 class="font-semibold mb-3">Support</h4>
+					<ul class="space-y-2 text-gray-400">
+						<li><a href="#" class="hover:text-white">Help Center</a></li>
+						<li><a href="#" class="hover:text-white">Contact</a></li>
+						<li><a href="#" class="hover:text-white">Status</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="border-t border-white/10">
+			<div class="container mx-auto px-6 py-6 text-xs text-gray-400 flex items-center justify-between">
+				<span>© <span id="year"></span> EduPro, Inc.</span>
+				<div class="flex items-center gap-4">
+					<a href="#" class="hover:text-white">Terms</a>
+					<a href="#" class="hover:text-white">Privacy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
